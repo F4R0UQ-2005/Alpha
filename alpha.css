@@ -1,19 +1,20 @@
 body{
-    background: linear-gradient(to bottom, #ffffff, #ffa38c); 
+    background-color: #EDEDED; 
     height: 100vh;
     margin: 0;
 }
 .Nav-Container{
     display:flex;
     justify-content: space-between;
-    border: solid 1px #f51800;
+    border: solid 1px #EEF5FF;
     height: fit-content;
     padding: 10px 5px 0 5px;
+    background-color: #0c0c0c;
 }
 #Logo{
     font-size: 40px;
     font-family: sans-serif;
-    color: #ff1900;
+    color: #ffffff;
 }
 .search-container{
     display: flex;
@@ -22,7 +23,7 @@ body{
 }
 #search-tab{
     border-radius: 15px;
-    border-color: rgb(199, 194, 194);
+    border-color: #ffffff;
     border-style: solid;
     height: 25px;
     align-self: center;
@@ -40,7 +41,7 @@ body{
     border-style: none;
     height: 40px;
     width: 80px;
-    background-color: #f51800;
+    background-color: #e91111;
     color: white;
 }
 .notification-tab{
@@ -48,7 +49,8 @@ body{
     width: 40px;
     border-radius: 20px;
     margin: 5px;
-    border-style: none;
+    border-style:solid;
+    border-color: #dbdbdb;
 }
 #tate{
     height: 40;
@@ -73,38 +75,44 @@ body{
     flex-direction: row;
     flex-wrap:nowrap;
     padding: 0 5px 0 5px;
+    background: linear-gradient(90deg, #3d3d3d, #ffffff, #ffffff, #333333)
 }
 .Nav-Bar{
-    border: solid 1px #f51800;
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 10px;
     justify-content: space-evenly;
+    width: 600px;
+    align-items: center;
 }
 .Nav-Bar nav{
-    color: #f51800;
+    color: #ffffff;
     font-size: 20px;
     font-family: sans-serif;
 }
 .Content-Bar{
-    border: solid 1px #f51800;
     display: flex;
     flex-direction: column;
-}
+}   
 .mini-search-container{
     display: flex;
     justify-content: space-between;
 }
 .mini-search-container h2{
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 50px;
     padding-left: 20px;
     padding-top: 20px;
+    color: #ffffff;
+    margin-left: 60px;
+    display: inline-block;
+   -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 #mini-search-tab{
     border-radius: 15px;
-    border-color: rgb(199, 194, 194);
+    border-color: rgb(0, 0, 0);
     border-style: solid;
     height: 25px;
     align-self: center;
@@ -120,12 +128,14 @@ body{
 }
 .box{
     border-radius: 125px 125px 0 0;
-    background-color: white;
+    background-color: #363636;
     height:300px;
     width: 250px;
-    margin: 10px;
-    align-content: center;
+    margin: 20px;
+    align-content: end;
     padding: 5px;
+    border: solid 1px #ffffff;
+    color: #ffffff;
 }
 .box h3{
     font-family: sans-serif;
@@ -136,18 +146,39 @@ body{
     padding: 5px;
     font-weight: 50;
 }
-.box button{
-    border-style: none;
-    background-color: #f51800;
-    display: inline-flex;
-    transform: scale(1);
-    color: white;
-    font-size: 15px;
-    border-radius: 5px;
-    padding: 10px 20px;
-}
+.follow-button {
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center; 
+    padding: 10px 20px; 
+    background-color: #f02b2b;
+    color: white; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 25px;
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+  }
+
+  .follow-button.unfollow {
+    background-color: #7a7878; 
+  }
+
+  .follow-button:hover {
+    background-color: #45a049; 
+    transform: scale(1.05);
+  }
+
+  .follow-button.unfollow:hover {
+    background-color: #e5533d; 
+  }
+
+  .follow-button:active {
+    transform: scale(0.95); 
+  }
 .socials{
-    border: solid 1px #f51800;
+    margin: 20px;
     display: flex;
     flex-direction: column;
 }
